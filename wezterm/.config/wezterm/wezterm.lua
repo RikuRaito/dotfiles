@@ -40,9 +40,9 @@ config.show_close_tab_button_in_tabs = false
 
 -- タブ同士の境界線を非表示
 config.colors = {
-	cursor_bg = "#89b4fa",
-	cursor_border = "#89b4fa",
-	cursor_fg = "#1a1b26",
+	cursor_bg = "#FFFFFF",
+	cursor_border = "#000000",
+	cursor_fg = "#000000",
 	tab_bar = {
 		inactive_tab_edge = "none",
 	},
@@ -59,11 +59,11 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 	local foreground = "#FFFFFF"
 	local edge_background = "none"
 	if tab.is_active then
-		background = config.colors.cursor_bg
+		background = "#89b4fa"
 		foreground = "#FFFFFF"
 	end
 	local edge_foreground = background
-	local title = "   " .. wezterm.truncate_right(tab.active_pane.title, max_width - 1) .. "   "
+	local title = "" .. wezterm.truncate_right(tab.active_pane.title, max_width - 1) .. "   "
 	return {
 		{ Background = { Color = edge_background } },
 		{ Foreground = { Color = edge_foreground } },

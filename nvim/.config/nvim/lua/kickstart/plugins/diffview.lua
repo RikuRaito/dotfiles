@@ -66,6 +66,12 @@ return {
       desc = 'Open Diffview with optional Git revisions, develop base, or the current PR base',
     })
 
+    vim.api.nvim_create_user_command('DOdh', function()
+      vim.cmd('DO develop...HEAD')
+    end, {
+      desc = 'Compare develop with HEAD',
+    })
+
     vim.api.nvim_create_user_command('DC', function()
       vim.cmd('DiffviewClose')
     end, {
