@@ -51,7 +51,6 @@ theme = TokyoNight
 macos-titlebar-style = tabs
 background-opacity = 0.85
 background-blur-radius = 20
-font-family = FiraCode Nerd Font Ret
 font-family = Noto Sans JP
 font-feature = -calt
 font-feature = -liga
