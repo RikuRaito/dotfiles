@@ -36,6 +36,7 @@ return {
       },
     },
     filesystem = {
+      find_by_full_path_words = true,
       filtered_items = {
         visible = true,
         hide_dotfiles = false,
